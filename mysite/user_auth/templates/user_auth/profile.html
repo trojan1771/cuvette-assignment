@@ -1,0 +1,13 @@
+\<!-- user_auth/templates/user_auth/profile.html -->
+
+{% extends 'user_auth/base.html' %}
+
+{% block content %}
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">User Profile</h2>
+            <p class="card-text">Username: {{ user.username }}</p>
+            <p class="card-text">Email: {{ user.email }}</p>
+        </div>
+    </div>
+{% endblock %}
